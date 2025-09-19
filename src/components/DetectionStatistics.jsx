@@ -109,7 +109,7 @@ const DetectionStatistics = () => {
     // Simple: track bounding box center drifting away from center of the video
     const { centerX, centerY } = face;
     const videoW = videoRef.current?.videoWidth || 640;
-    const videoH = videoRef.current?.videoHeight || 480;
+    const videoH = videoRef.current?.videoHeight || 1180;
     const dX = Math.abs(centerX - videoW / 2);
     const dY = Math.abs(centerY - videoH / 2);
     const drift = Math.sqrt(dX*dX + dY*dY);
